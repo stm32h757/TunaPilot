@@ -13,6 +13,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wix", "wix\wix.csproj", "{76374F95-C343-4ACC-B86F-7ECFDD668F46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{9B3AC501-5FCB-4A2A-A628-BE0985DB2BD4}"
+	ProjectSection(SolutionItems) = preProject
+		YJ_Test_Plugin.cs = YJ_Test_Plugin.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissionPlanner.Stats", "ExtLibs\MissionPlanner.Stats\MissionPlanner.Stats.csproj", "{6A6F4345-0A45-413E-B6D6-FD73660DAD4C}"
 EndProject
@@ -223,7 +226,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MissionPlannerTests", "Miss
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockDroneID", "ExtLibs\MockDroneID\MockDroneID.csproj", "{6D39C141-733B-4C4A-87AB-974637952D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainMakerPlugin", "Plugins\TerrainMakerPlugin\TerrainMakerPlugin.csproj", "{DDD2FEA8-801E-463B-8913-9CCCDA2D9429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TerrainMakerPlugin", "Plugins\TerrainMakerPlugin\TerrainMakerPlugin.csproj", "{DDD2FEA8-801E-463B-8913-9CCCDA2D9429}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

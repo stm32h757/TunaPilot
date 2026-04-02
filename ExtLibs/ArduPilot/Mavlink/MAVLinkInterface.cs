@@ -5696,6 +5696,9 @@ Mission Planner waits for 2 valid heartbeat packets before connecting
 
                 var loc = new PointLatLngAlt(home.latitude / 1.0e7, home.longitude / 1.0e7, home.altitude / 1000.0);
 
+                // YJ Added Code
+                Console.WriteLine("홈 포지션 메시지 버퍼로부터 수신함!!"); // 미션플래너 킬 때 이 부분이 작동 안하는 것 확인함.
+
                 MAVlist[buffer.sysid, buffer.compid].cs.HomeLocation = loc;
             }
             else if (buffer.msgid == (byte) MAVLINK_MSG_ID.SET_POSITION_TARGET_GLOBAL_INT)

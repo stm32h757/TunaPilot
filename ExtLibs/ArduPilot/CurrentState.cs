@@ -1574,6 +1574,8 @@ namespace MissionPlanner
             get => _homelocation;
             set
             {
+                // YJ added Code
+                Console.WriteLine($"홈 로케이션이 업데이트됨!!\r\n{value}");
                 _homelocation = value;
             }
         }

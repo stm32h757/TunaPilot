@@ -3242,8 +3242,13 @@ namespace MissionPlanner.GCSViews
         {
             writeKML();
             double homealt = MainV2.comPort.MAV.cs.HomeAlt;
-            Form temp = new ElevationProfile(pointlist, homealt,
-                (altmode) Enum.Parse(typeof(altmode), CMB_altmode.Text));
+            // YJ Added Code
+            Console.WriteLine($"CMB_altmode.Text : {CMB_altmode.Text}");
+
+            var kv = (KeyValuePair<int, string>)CMB_altmode.SelectedItem;
+            altmode mode = (altmode)kv.Key;
+
+            Form temp = new ElevationProfile(pointlist, homealt, mode);
             ThemeManager.ApplyThemeTo(temp);
             temp.ShowDialog();
         }

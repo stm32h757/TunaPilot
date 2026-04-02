@@ -2823,6 +2823,10 @@ namespace MissionPlanner
                                         Thread.Sleep(100);
 
                                     MainV2.comPort.MAV.cs.HomeLocation = new PointLatLngAlt(MainV2.comPort.getWP(0));
+
+                                    // YJ Added Code
+                                    Console.WriteLine($"메인V2에서 홈 업데이트!, 현재 기체 상태 : {MainV2.comPort.MAV.apname}");
+
                                     if (MyView.current != null && MyView.current.Name == "FlightPlanner")
                                     {
                                         // update home if we are on flight data tab
